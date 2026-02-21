@@ -24,6 +24,6 @@ export const config = {
          * - /_next/* (Next.js internals)
          * - /favicon.ico, /sitemap.xml, /robots.txt (static files)
          */
-        '/((?!auth|api|_next|favicon.ico|sitemap.xml|robots.txt).*)',
+        '/((?!auth|api|_next|favicon.ico|sitemap.xml|robots.txt|sw\\.js).*)',
     ],
 };
