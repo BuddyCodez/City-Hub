@@ -1,7 +1,9 @@
 /// <reference lib="webworker" />
 
 // CityHub Service Worker for Web Push Notifications
-
+self.addEventListener("install", (event) => {
+  self.skipWaiting();
+});
 self.addEventListener("push", (event) => {
   if (!event.data) return;
 
